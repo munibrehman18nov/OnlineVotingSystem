@@ -51,7 +51,7 @@ int pid = (Integer)session.getAttribute("pid");
 
             <div id = "body" style="margin:1px 5px 1px 5px; width:100%; height:1100px; overflow:auto;">
                 <div id="innerbody1" style="padding: 20px 40px 0px 0px; text-align: right; overflow:auto;">
-                    <form name="candForm" action="./Controller" style=" overflow:auto;">
+                    <form name="candForm" action="./PartyCandidatesController" style=" overflow:auto;">
                           
                         <label style="padding: 0px 26px 0px 20px; font-size: 22px; text-align: left;"><b>Candidate Name</b></label>
                         <input style="margin: 0px 0px 5px 0px; padding: 5px; font-size: 20px; text-align: left;" type="text" name= "cname" placeholder="Enter Candidate Name Here"><br>

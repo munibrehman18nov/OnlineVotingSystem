@@ -52,7 +52,7 @@ ArrayList<Constituency> constList = (ArrayList<Constituency>)session.getAttribut
 
             <div id = "body" style="margin:1px 5px 1px 5px; width:100%; height:1100px; overflow:auto;">
                 <div id="innerbody1" style="padding: 0px 20px 0px 0px; text-align: right; overflow:auto;">
-                    <form name="loginForm" action="./Controller" style=" overflow:auto;">
+                    <form name="loginForm" action="./ResultsController" style=" overflow:auto;">
                         <br>   
                         <b><label style="padding: 0px 20px 0px 0px; font-size: 24px;">Select Constituency</label>
                         <select name="rscbBox" style="width: 318px; font-size: 22px; padding: 2px; margin-right: 1px;">

@@ -42,7 +42,7 @@
 
             <div id = "body" style="margin:1px 5px 1px 5px; overflow:auto; width:100%; height:1100px;">
                 <div id="signupdiv" style="padding: 30px 0px 0px 700px; overflow:auto; text-align: center;">
-                    <form name="pidform" action="./Controller">
+                    <form name="pidform" action="./PIDPromptController">
 <%
     int pid = (Integer)session.getAttribute("pid");
 %>

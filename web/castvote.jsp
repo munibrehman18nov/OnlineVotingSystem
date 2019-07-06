@@ -54,7 +54,7 @@ ArrayList<Constituency> constList = (ArrayList<Constituency>)session.getAttribut
             <div id = "body" style="margin:1px 5px 1px 5px; width:100%; height:1100px; overflow:auto;">
                 <h1>ONLINE POLLING SYSTEM</h1>
                 <div id="innerbody1" style="padding: 0px 20px 0px 0px; text-align: right; overflow:auto;">
-                    <form name="loginForm" action="./Controller" style=" overflow:auto;">
+                    <form name="loginForm" action="./CastVoteController" style=" overflow:auto;">
                         <b><label style="padding: 0px 90px 0px 0px; font-size: 25px;">Your National Constituency Number </label><br><label style= "border: 1px; padding: 0px 20px 0px 0px;  font-size: 25px;"><% out.println(session.getAttribute("const_no")); %></label></b>
                         <br><br>
                         <b><label style="padding: 0px 300px 0px 0px; font-size: 25px;">Select Candidate </label><br>
@@ -74,10 +74,12 @@ for(int i=0; i<cList.size(); i++)
 
                         <br><br>
                         <b><input style="padding: 5px; font-size: 24px; text-align: center;" type="submit" name="submit" value="VOTE"></b>
+                        
                         <input type="hidden" name="srcpg" value="castvote">
                     </form>
                 </div>
             </div>
+                        
             <div id="footer" style="margin:1px 5px 1px 5px; overflow:auto; width:100%; height:450px;">
                 
                 <footer class="footer-distributed">

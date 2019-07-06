@@ -35,7 +35,7 @@ public class Controller extends HttpServlet
         }
         
         
-        if(request.getParameter("srcpg") != null)
+        /*if(request.getParameter("srcpg") != null)
         {
             if(request.getParameter("srcpg").equals("index") && request.getParameter("submit").equals("GO Voter"))
             {
@@ -130,7 +130,8 @@ public class Controller extends HttpServlet
                 }
             }
 
-            /*else if(request.getParameter("srcpg").equals("login"))
+            
+            else if(request.getParameter("srcpg").equals("login")) // USELESS IF STATEMENT, CAN BE DISCAREDED
             {
                 String id = (String) request.getParameter("vname");
                 String password = (String) request.getParameter("vpassword");
@@ -168,8 +169,8 @@ public class Controller extends HttpServlet
                 {
                     response.sendRedirect("./register.html");
                 }
-
-            }*/
+                
+            } // USELESS END
 
             else if(request.getParameter("srcpg").equals("castvote"))
             {
@@ -317,9 +318,9 @@ public class Controller extends HttpServlet
                 session.setAttribute("const_no", const_no);
                 response.sendRedirect("./results.jsp");
             }
-        }
+        }*/
         
-        else if(request.getParameter("srcpg") == null)
+        if(request.getParameter("srcpg") == null)
         {
             ArrayList<Candidate> cList = new ArrayList<Candidate>();
             ArrayList<Constituency> constList = new ArrayList<Constituency>();
